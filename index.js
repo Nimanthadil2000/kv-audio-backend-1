@@ -11,8 +11,7 @@ app.use(bodyParser.json());
 
 app.use((req, res, next) => {
   let token = req.header("Authorization");
-
- 
+  //created the auth 
 
   if (token != null) {
     token = token.replace("Bearer ", ""); 
